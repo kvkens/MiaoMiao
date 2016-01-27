@@ -1,0 +1,26 @@
+{
+  "name": "miaomiao",
+  "version": "1.0.0",
+  "description": "this is a study for diary",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kvkens (kvkens@qq.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kvkens/MiaoMiao.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "connect-mongo": "^1.1.0",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "moment": "^2.11.1",
+    "mongoose": "^4.3.7",
+    "multer": "^1.1.0",
+    "multiline": "^1.0.2"
+  }
+}
