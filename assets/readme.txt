@@ -1,1 +1,1 @@
-这里放的是静态资源文件
+Here is the front-end static files
