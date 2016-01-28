@@ -2,9 +2,54 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>喵喵日记<%=version%> - 多人分享日记社区 公开的 快乐的</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<meta name="description" content="喵喵日记,多人分享日记社区,公开的,快乐的">
+    	<meta name="author" content="Kvkens(kvkens@qq.com)">
+    	<link rel="icon" href="./libs/favicon.ico">
+		<title>喵喵日记 - 多人分享日记社区 公开的 快乐的</title>
+		<!-- Bootstrap core CSS -->
+    	<link href="./libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="./libs/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    	<style>
+			.navbar-fixed-top{
+				position: relative;
+			}
+    	</style>
 	</head>
 	<body>
+		 <nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="/">喵喵日记社区</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <form class="navbar-form navbar-right">
+	            <div class="form-group">
+	              <input name="account" type="text" placeholder="帐号" class="form-control">
+	            </div>
+	            <div class="form-group">
+	              <input name="password" type="password" placeholder="密码" class="form-control">
+	            </div>
+	            <button type="submit" class="btn btn-success">登录</button>
+	            <a href="./Join" class="btn btn-default">加入</a>
+	          </form>
+	        </div><!--/.navbar-collapse -->
+	      </div>
+	    </nav>
+
+
+
 		<%-body -%>
+	<!-- Bootstrap core JavaScript================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
