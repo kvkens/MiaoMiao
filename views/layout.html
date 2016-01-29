@@ -11,11 +11,15 @@
 		<!-- Bootstrap core CSS -->
     	<link href="./libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     	<link href="./libs/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    	<style>
-			.navbar-fixed-top{
-				position: relative;
+		<style>
+			.body-main{
+				margin-top:65px;
+				/*background: #1B6D85;*/
 			}
-    	</style>
+			.body-news{
+				border-bottom: 1px solid #ececec;
+			}
+		</style>
 	</head>
 	<body>
 		 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,24 +33,33 @@
 	          </button>
 	          <a class="navbar-brand" href="/">喵喵日记社区</a>
 	        </div>
+	        <ul class="nav navbar-nav">
+              <li><a href="/">首页</a></li>
+              <li><a href="/">发现</a></li>
+              <li><a href="/">关于本站</a></li>
+            </ul>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <form class="navbar-form navbar-right">
 	            <div class="form-group">
-	              <input name="account" type="text" placeholder="帐号" class="form-control">
+	              	<a href="./Login" class="btn btn-success">登录</a>
 	            </div>
 	            <div class="form-group">
-	              <input name="password" type="password" placeholder="密码" class="form-control">
+	              	<a href="./Join" class="btn btn-default">加入</a>
 	            </div>
-	            <button type="submit" class="btn btn-success">登录</button>
-	            <a href="./Join" class="btn btn-default">加入</a>
 	          </form>
 	        </div><!--/.navbar-collapse -->
 	      </div>
 	    </nav>
-
-
-
-		<%-body -%>
+	    <div class="container body-main">
+	    	<%-body -%>
+	    </div>
+		
+		<footer class="footer">
+	      <div class="container">
+	        <p class="text-muted">本站基于Node.js v0.12.9 技术构建 主要用于技术讲解</p>
+	        <p class="text-muted">Copyright&nbsp;&copy;&nbsp;2016 喵喵日记 Power by Kvkens</p>
+	      </div>
+	    </footer>
 	<!-- Bootstrap core JavaScript================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./libs/jquery/dist/jquery.min.js"></script>
