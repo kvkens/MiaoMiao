@@ -8,7 +8,14 @@ var express = require("express");
 var router = express.Router();
 
 var home = require("./controllers/homeController");
+var user = require("./controllers/userController");
 
+
+//首页
 router.get("/",home.index);
+//加入
+router.get("/Join",user.join);
+router.get("/Login",user.login);
+
 
 module.exports = router;
