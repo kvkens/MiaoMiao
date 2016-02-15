@@ -15,6 +15,7 @@ var user = require("./controllers/userController");
 router.get("/",home.index);
 //加入
 router.get("/Join",user.join);
+//登录
 router.get("/Login",user.login);
 
 
